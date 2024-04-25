@@ -1,0 +1,14 @@
+spring:
+  security:
+    user:
+      name: demo-username
+      password: demo-password
+  application:
+    name: example
+  profiles:
+    active: dev
+server:
+  port: 8080
+logging:
+  level:
+    ROOT: INFO

@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "80a61669-fe9c-44a1-989e-084cf9fe9dd7",
+		"name": "challenge1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6459643",
+		"_collection_link": "https://orange-sunset-893863.postman.co/workspace/New-Team-Workspace~f02dd45c-6cb8-448b-b0d1-278ccf5f6bbd/collection/6459643-80a61669-fe9c-44a1-989e-084cf9fe9dd7?action=share&source=collection_link&creator=6459643"
+	},
+	"item": [
+		{
+			"name": "autocomplete",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "demo-password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "demo-username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/challenge/address/auto_complete?partial_address=1&city=SAN&state=CA",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"challenge",
+						"address",
+						"auto_complete"
+					],
+					"query": [
+						{
+							"key": "partial_address",
+							"value": "1"
+						},
+						{
+							"key": "city",
+							"value": "SAN"
+						},
+						{
+							"key": "state",
+							"value": "CA"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
